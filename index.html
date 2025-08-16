@@ -3,90 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parker Shumard's Resume</title>
+    <title>Parker Shumard Resume</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://pshum-portfolio-images.s3.us-west-2.amazonaws.com/me/psstudio.jpg" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="interactive.js"></script>
+    <script>
+      function copyEmail() {
+        navigator.clipboard.writeText('parkersam@gmail.com');
+        console.log('Email copied!');
+        alert('Email copied!');
+      }
+    </script>
   </head>
   <body>
     <header>
       <h1>Parker Shumard</h1>
       <p class="contact">
-        (801) 842-1567 | <a href="#" onclick="copyEmail()" title="copy email">parkersam@gmail.com</a> |
-        <a href="https://parkershumard.com" target="_blank">parkershumard.com</a> | Provo, UT
+        (801) 842-1567 |
+        <a href="#" onclick="copyEmail()" title="Email Parker">parkersam@gmail.com</a> |
+        <a href="https://parkershumard.com" target="_blank" rel="noopener">parkershumard.com</a> | Provo, UT
       </p>
     </header>
 
-    <section>
-      <h2>EDUCATION</h2>
-      <p class="section-title">
-        Computer Science Major - Software Engineering Emphasis <span class="right">Graduation Apr 2026</span>
-      </p>
-      <p class="institution">Brigham Young University<span class="right">Provo, UT</span></p>
-      <p class="subtitle">Classes and Learned Concepts:</p>
-      <ul>
-        <li>DevOps and QA</li>
-        <li>Web Programming</li>
-        <li>Software Design</li>
-        <li>Advanced Algorithms</li>
-        <li>Technical Writing</li>
-      </ul>
-    </section>
+    <main>
+      <section>
+        <h2>TECHNICAL SKILLS</h2>
+        <p>
+          <strong>Languages & Frameworks:</strong> TypeScript, Angular, Node.js, React, Java, Python, Go, PostgreSQL<br />
+          <strong>Cloud & DevOps:</strong> AWS, Docker, CI/CD, Linux<br />
+          <strong>Web Backends:</strong> Fastify, Express.js<br />
+          <strong>Practices & Tools:</strong> Git, Test-Driven Development, Agile (Scrum), VS Code, JetBrains IDEs
+        </p>
+      </section>
 
-    <section>
-      <h2>DEVELOPMENT SKILLS</h2>
-      <ul>
-        <li>Proficient in Typescript, Angular, AWS, Node.js, Docker, PostgreSQL, Fastify, Express.js</li>
-        <li>Experienced with React, Java, Python, JetBrains IDEs, Linux, Agile development (Scrum)</li>
-      </ul>
-    </section>
+      <section>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
 
-    <section>
-      <h2>DEVELOPMENT EXPERIENCE</h2>
+        <p class="section-title">Web Development Intern<span class="right">Apr 2025 - Aug 2025</span></p>
+        <p class="institution">BYU, FHSS Computing Services<span class="right">Provo, UT</span></p>
+        <ul>
+          <li>
+            Designed a new application stack and deployment pipeline focused on developer experience and
+            maintainability.
+          </li>
+          <li>Built developer tooling including a CLI, backend services, and reusable frontend components.</li>
+          <li>Trained developers on new technologies and web programming best practices.</li>
+          <li>Led 16 developers in transitioning 24 legacy applications to a modern technology stack.</li>
+        </ul>
 
-      <p class="section-title">Web Developer<span class="right">Aug 2024 - Present</span></p>
-      <p class="institution">BYU, FHSS Computing Services<span class="right">Provo, UT</span></p>
-      <ul>
-        <li>Developed and maintained 24 college websites for thousands of faculty and students</li>
-        <li>Implemented test-driven-development methodology to ensure high-quality websites</li>
-        <li>Trained new hires on site design and effective development practices</li>
-        <li>Organized communication with clients concerning website requirements</li>
-      </ul>
+        <p class="section-title">Web Developer<span class="right">Aug 2024 - Present</span></p>
+        <p class="institution">BYU, FHSS Computing Services<span class="right">Provo, UT</span></p>
+        <ul>
+          <li>Developed and maintained 24 college websites serving thousands of faculty and students.</li>
+          <li>Introduced and practiced test-driven development to improve reliability and reduce regressions.</li>
+          <li>Onboarded and mentored new hires on site design and effective development practices.</li>
+          <li>Coordinated with clients to gather requirements and ensure successful launches.</li>
+        </ul>
 
-      <p class="section-title">Web Development Intern<span class="right">Apr 2025 - Aug 2025</span></p>
-      <p class="institution">BYU, FHSS Computing Services<span class="right">Provo, UT</span></p>
-      <ul>
-        <li>Designed new application stack and web app deployment pipeline focused on developer experience</li>
-        <li>Made developer tools including a CLI, backend services, and re-usable frontend components</li>
-        <li>Trained developers on new technologies and web programming best practices</li>
-        <li>Led 16 other developers in transitioning 24 legacy applications to modern technology stack</li>
-      </ul>
+        <p class="section-title">Software Development Intern<span class="right">May 2024 - Aug 2024</span></p>
+        <p class="institution">Focal Point Technologies<span class="right">Reston, VA</span></p>
+        <ul>
+          <li>Led a team of 3 interns to design and build a user-focused application.</li>
+          <li>Developed systems for geospatial data pipelining to handle hundreds of requests per minute.</li>
+          <li>Improved system performance by 30% by identifying and resolving bottlenecks in the data pipeline.</li>
+        </ul>
 
-      <p class="section-title">Software Development Intern <span class="right">May 2024 - Aug 2024</span></p>
-      <p class="institution">Focal Point Technologies <span class="right">Reston, VA</span></p>
-      <ul>
-        <li>Led team of 3 other interns to design and build a user-focused application</li>
-        <li>Developed systems for geospatial data pipelining to handle 100s of requests per minute</li>
-        <li>Improved system performance by 30% by identifying and resolving bottlenecks in data pipeline code</li>
-      </ul>
-    </section>
+        <p class="section-title">Technical Projects Lead<span class="right">Dec 2023 - May 2024</span></p>
+        <p class="institution">BYU, FHSS Computing Services<span class="right">Provo, UT</span></p>
+        <ul>
+          <li>Managed and oversaw technical projects for the college.</li>
+          <li>Coordinated work across 6 teams to improve departmental security.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>PERSONAL PROJECTS</h2>
-      <ul>
-        <li>Wordle Wizard: A tool to help the user make educated Wordle guesses</li>
-        <li>FHSS CLI: A developer tool that automates code generation and other menial tasks</li>
-      </ul>
-    </section>
+      <section>
+        <h2>PROJECTS</h2>
+        <ul>
+          <li>
+            <strong>Wordle Wizard</strong> — Tool to help users make educated Wordle guesses using algorithmic
+            filtering.
+          </li>
+          <li><strong>FHSS CLI</strong> — Developer tool that automates code generation and other repetitive tasks.</li>
+          <li><strong>MISW-API</strong> — API for playing simple Minesweeper games; clients in progress.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>PROJECT COORDINATION EXPERIENCE</h2>
-
-      <p class="section-title">Technical Projects Lead <span class="right">Dec 2023 - May 2024</span></p>
-      <p class="institution">BYU, FHSS Computing Services <span class="right">Provo, UT</span></p>
-      <ul>
-        <li>Managed and oversaw various technical projects for the college</li>
-        <li>Coordinated work between 6 different teams to improve departmental security</li>
-      </ul>
-    </section>
+      <section>
+        <h2>EDUCATION</h2>
+        <p class="section-title">
+          B.S., Computer Science — Software Engineering Emphasis<span class="right">Expected Apr 2026</span>
+        </p>
+        <p class="institution">Brigham Young University<span class="right">Provo, UT</span></p>
+        <p>
+          Relevant coursework: DevOps & QA, Web Programming, Software Design, Advanced Algorithms, Technical Writing
+        </p>
+      </section>
+    </main>
   </body>
 </html>
