@@ -9,21 +9,19 @@
       type="image/x-icon"
       href="https://pshum-portfolio-images.s3.us-west-2.amazonaws.com/me/psstudio.jpg" />
     <link rel="stylesheet" href="styles.css" />
-    <script>
-      function copyEmail() {
-        navigator.clipboard.writeText('parkersam@gmail.com');
-        console.log('Email copied!');
-        alert('Email copied!');
-      }
-    </script>
   </head>
   <body>
     <header>
       <h1>Parker Shumard</h1>
       <p class="contact">
         (801) 842-1567 |
-        <a href="#" onclick="copyEmail()" title="Email Parker">parkersam@gmail.com</a> |
-        <a href="https://parkershumard.com" target="_blank" rel="noopener">parkershumard.com</a> | Provo, UT
+        <a
+          onclick="navigator.clipboard.writeText('parkersam@gmail.com'); alert('Email copied!');"
+          title="Copy Email"
+          style="cursor: pointer">
+          parkersam@gmail.com
+        </a>
+        | <a href="https://parkershumard.com" target="_blank" rel="noopener">parkershumard.com</a> | Provo, UT
       </p>
     </header>
 
